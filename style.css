@@ -1,0 +1,124 @@
+/* Meta */
+html, body {
+    padding: 0px;
+    margin: 0px;
+
+    background-color: #222;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Sections */
+header, footer, main {
+    padding: 1ch;
+}
+
+header {
+    background-color: #222;
+    text-align: center;
+}
+
+footer {
+    vertical-align: text-top;
+    background-color: #222;
+
+    color: #FFF;
+}
+
+footer a {
+    color: #CCC;
+}
+
+footer a:focus {
+    color: #DDD;
+}
+
+footer a:visited {
+    color: #999;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    background-color: #333;
+    text-align: center;
+
+}
+
+section {
+    margin-bottom: 1ch;
+}
+
+/* Text */
+h1, h2, h3, h4, h5, h6 {
+    color: #BBB;
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+}
+
+p {
+    color: #DD9;
+}
+
+/* Stack columns horizontally if screen is wide enough */
+@media (min-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Two-column Layout */
+    .column {
+        flex: 50%;
+
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .column_left {
+        flex: 33%;
+    }
+}
+
+/* Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+
+    table-layout: fixed;
+
+    max-width: 50vw;
+
+    color: #DD9;
+}
+
+th, td {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #222;
+
+    padding: 0.5ch 1ch;
+    margin: 0px;
+}
+
+th {
+    padding: 1ch 2ch
+}
+
+.column_name {
+    min-width: 8vw;
+    max-width: 10vw;
+}
+
+.column_price {
+    min-width: 8vw;
+    max-width: 10vw;
+}
+
+.column_description {
+    width: 100%;
+}
