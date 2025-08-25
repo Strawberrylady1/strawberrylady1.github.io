@@ -25,6 +25,19 @@ footer {
     color: #FFF;
 }
 
+a {
+    color: #C9C;
+}
+
+a:focus {
+    color: #DAD;
+}
+
+a:visited {
+    color: #DBD;
+}
+
+
 footer a {
     color: #CCC;
 }
@@ -47,6 +60,8 @@ main {
     background-color: #333;
     text-align: center;
 
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 section {
@@ -55,17 +70,17 @@ section {
 
 /* Text */
 h1, h2, h3, h4, h5, h6 {
-    color: #BBB;
+    color: #C9C;
     margin-top: 1ch;
     margin-bottom: 1ch;
 }
 
 p {
-    color: #DD9;
+    color: #DDD;
 }
 
 /* Stack columns horizontally if screen is wide enough */
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
     main {
         display: flex;
         flex-direction: row;
@@ -88,12 +103,13 @@ p {
 table {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2ch;
 
     table-layout: fixed;
 
     max-width: 50vw;
 
-    color: #DD9;
+    color: #DDD;
 }
 
 th, td {
@@ -121,4 +137,9 @@ th {
 
 .column_description {
     width: 100%;
+}
+
+/* Images */
+img {
+    max-width: 50%;
 }
